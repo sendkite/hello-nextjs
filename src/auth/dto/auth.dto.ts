@@ -9,3 +9,13 @@ export class SignupRequestDto {
   @IsNotEmpty()
   password: string;
 }
+
+export class LoginRequestDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  password: string;
+}
